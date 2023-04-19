@@ -1,0 +1,261 @@
+
+
+.h1-h2-h3-p {
+    font-family: "contralto-small", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.big-text {
+    display: flex;
+    justify-content: center;
+    font-family: "contralto-small", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.body {
+    background-color: hsla(53, 66%, 60%, 0.148);
+}
+.website {
+    margin: 100%vw;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.header-flex {
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.logo {
+    align-items: left;
+    justify-content: left;
+    text-align: justify;
+    padding: 20px;
+}
+.header-image {
+    display:flex;
+    Justify-content: center;
+    flex-wrap: wrap;
+}
+.about-us-flex {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    gap: 16px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+.header-color {
+    color:#974D23;
+}
+.menu {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color:#974D23;
+
+}
+.menu-flex {
+    display: flex;
+    padding: 50px;
+    margin: 20px;
+    gap: 30px;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.reservation-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    margin: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.res-box {
+    border: solid 2px;
+    border-radius: 10px;
+    padding: 5px 15px;
+    border-color:black;
+    background-color:#974D23;
+    color: white;
+}
+.footer-flex{
+    display: flex;
+    text-align: left;
+    justify-content:space-around;
+    background-color:#974D23;
+    color: white;
+    padding: 25px;
+}
+.social-flex {
+    display:flex;
+    align-items: left;
+}
+button {
+    border: none;
+    background-color: transparent;
+    transition: 200ms;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.h-menu {
+    padding: 10px;
+    border-radius: 100%;
+}
+.h-menu:hover {
+    cursor: pointer;
+    color: white;
+    background-color: gray;
+}
+.nav-links a {
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(22, 22, 22);
+}
+.show-desktop {
+    display: none;
+}
+.show-mobile {
+    display: inline;
+}
+.menu-button {
+    border-color: black;
+    background-color: white;
+    padding: 5px;
+    text-decoration: none;
+    text-decoration-color: black;
+    border-radius: 10px;
+    color: black;
+}
+.reservation-button {
+    border-color: black;
+    background-color: white;
+    padding: 5px;
+    text-decoration: none;
+    text-decoration-color: black;
+    border-radius: 10px;
+    color:#974D23;
+    text-align: center;
+}
+.image {
+    margin: 10px;
+}
+.fade--in.active {
+    animation-name: fade--in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.fade--in {
+    opacity:0;
+}
+.fade--in-2.active {
+    animation-name: fade--in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.fade--in-2 {
+    opacity: 0;
+}
+.scale--up.active {
+    animation-name: scale--up;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+.scale--up {
+    opacity: 0;
+    transform: scale(0);
+}
+.rotate {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+.rotate.active {
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes fade--in {
+    0% {
+        transform:translateY(200px);
+        opacity:0;
+    }
+    100% {
+        transform:translateY(0px);
+        opacity:1;
+    }
+}
+@keyframes fade--in-2 {
+    0% {
+        transform:translateY(200px);
+        opacity:0;
+    }
+    100% {
+        transform:translateY(0px);
+        opacity:1;
+    }
+}
+@keyframes scale--up {
+    0% {
+        transform:scale(0);
+        opacity:0;
+    }
+    0% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform:scale(1);
+        opacity:1;
+    }
+}
+@keyframes rotate {
+    0% {
+        transform:rotate(0deg);
+        opacity:1;
+    }
+    100% {
+        transform:rotate(1080deg);
+        opacity:1;
+    }
+}
+
+
+
+
+
+
+
+
+@media (min-width: 648px) {
+    .navigation {
+        padding: 20px 15px;
+    }
+    .show-desktop {
+        display: block;
+    } 
+    .show-mobile {
+        display: none;
+    }
+    .about-us-flex {
+        flex-wrap: nowrap;
+    }
+    .reservation-flex {
+        flex-wrap:nowrap;
+    }
+    .header-flex {
+        flex-wrap:nowrap;
+    }
+    
+    
+}
